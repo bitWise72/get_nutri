@@ -8,33 +8,19 @@
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "api/index.py"
-    },
-    {
-      "src": "/get_recipe",
-      "methods": ["POST","OPTIONS"],
-      "dest": "/api/index.py"
-    },
-    {
       "src": "/get_nutri",
-      "methods": ["POST","OPTIONS"],
-      "dest": "/api/index.py"
-    },
-    {
-      "src": "/get_ingri",
-      "methods": ["POST","OPTIONS"],
-      "dest": "/api/index.py"
+      "methods": ["POST", "OPTIONS"],
+      "dest": "api/index.py"
     },
     {
       "src": "/test",
       "methods": ["GET"],
-      "dest": "/api/index.py"
+      "dest": "api/index.py"
     },
     {
       "src": "/",
       "methods": ["GET"],
-      "dest": "/api/index.py"
+      "dest": "api/index.py"
     }
   ]
 }
